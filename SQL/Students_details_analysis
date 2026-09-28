@@ -1,0 +1,43 @@
+create database college;
+USE college;
+CREATE TABLE students(
+id INT PRIMARY KEY,
+name VARCHAR(20),
+age INT,
+course VARCHAR(15),
+fees int
+);
+ALTER TABLE students ADD COLUMN email varchar(50);
+ALTER TABLE students ADD COLUMN location varchar(30);
+ALTER TABLE students DROP COLUMN email;
+ALTER TABLE students RENAME COLUMN age TO stud_age;
+ALTER TABLE students MODIFY COLUMN course VARCHAR(20);
+ALTER TABLE students RENAME TO Students_Data;
+ALTER TABLE students_data MODIFY COLUMN email VARCHAR(50);
+SELECT * FROM students_data;
+
+SELECT id,course,email FROM students_data;
+INSERT INTO students_data(id,course,stud_age,email)    
+VALUES
+(19018,'DS',21,'anshi@gmail.com'),(19019,'DS',20,'nandhu@gmail.com'),
+(19020,'DS',21,'anjit@gmail.com'),(19021,'DS',20,'jasmi@gmail.com'),
+(19022,'DA',22,'lilly@gmail.com'),(19023,'DA',21,'lucky@gmail.com');
+SELECT * FROM students_data;
+
+UPDATE students_data SET id=19086 WHERE stud_age=23;
+SELECT * FROM students_data;
+
+SELECT * FROM students_data WHERE stud_age>20;
+SELECT * FROM students_data WHERE stud_age=21;
+SELECT * FROM students_data WHERE stud_age <=21;
+
+SELECT * FROM students_data WHERE id BETWEEN 18 AND 20;
+SELECT * FROM students_data WHERE stud_age IN(20,21);
+SELECT * FROM students_data WHERE stud_age NOT IN(20,21);
+SELECT * FROM students_data WHERE email IS NULL;
+SELECT * FROM students_data WHERE email is NOT NULL;
+
+
+ 
+
+

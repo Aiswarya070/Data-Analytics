@@ -1,0 +1,17 @@
+# Machine Learning Projects
+
+This section contains machine learning projects developed using Python and Scikit-learn.
+
+## Techniques Used
+
+- Data Preprocessing
+- Feature Selection
+- Train-Test Split
+- Decision Tree
+- Logistic Regression
+- Linear Regression
+- Model Evaluation
+
+Google Colab Notebook:*
+
+[Open Project in Google Colab]("https://colab.research.google.com/drive/1wYssYK28rrNeneN6s7BD75ldYcq_REhS?usp=sharing")
